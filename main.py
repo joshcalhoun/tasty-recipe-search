@@ -41,7 +41,6 @@ def main(opts):
     missed_ingredients = most_liked_recipe.get('missedIngredients', [])
     if missed_ingredients:
         print('Missing Ingredients:')
-        # print(most_liked_recipe)
 
         for missed_ingredient in missed_ingredients:
             print(f'{missed_ingredient.get("originalString", "")}')
@@ -51,7 +50,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
 
-    # Required recipes argument
+    # Required ingredient(s) argument
     parser.add_argument("ingredients", help="Required argument ingredients as a space separated list.", nargs="*")
 
     args = parser.parse_args()

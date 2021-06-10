@@ -7,21 +7,24 @@ It returns both the recipe and the missing ingredients.
 
 ## Prerequisites
 
-Python >= 3.6
+Python >= 3.7
 
-.env file with the following environment variables
+.env file in the project root with the following environment variables
 
-API_KEY=<< Spoonacular API key >>
+API_KEY = << Spoonacular API key >>
 
-API_URL=<< Spoonacular API find by ingredients path >> i.e. https://api.spoonacular.com/recipes/findByIngredients
+API_URL = << Spoonacular API find by ingredients path >> i.e. https://api.spoonacular.com/recipes/findByIngredients
 
 ## Installing Tasty Recipe Search
 
-To setup the project, follow these steps after cloning the repo:
+To setup the project, follow these steps after cloning the repo in the project root:
+
+### With Python installed natively
 ```
 pip install -r requirements.txt
 ```
 
+### With Docker
 To setup the project with Docker
 - Build the Dockerfile in the root of the project
 
